@@ -1,6 +1,5 @@
 import pygame
 from pygame.locals import *
-import time
 import pygame.camera
 import pygame.image
 
@@ -28,8 +27,5 @@ while 1:
             pygame.camera.quit()
 
     img1 = cam1.get_image().convert()
-
-
-    scaled_img1 = pygame.transform.scale(img1, (100, 100))
-    screen.blit(scaled_img1, (0, 0))
+    screen.blit(img1, (0, 0))
     pygame.display.update()
